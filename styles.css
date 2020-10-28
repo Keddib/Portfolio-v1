@@ -1,0 +1,129 @@
+@import url("./includes.css");
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+  background-color: #000;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: "Gibson", sans-serif;
+  font-weight: 500;
+}
+
+/* navbar styles */
+.navbar {
+  width: 100%;
+  margin: 0;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+}
+
+.nav-list {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-top: 10px;
+}
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list button {
+  width: 110px;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+}
+
+/* logo section */
+
+/* check box for dark mode */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+.check {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 22px;
+  background: #ffffff;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+}
+input[type="checkbox"]:checked ~ .check {
+  box-shadow: 0 0 0 1200px #fff;
+}
+.check::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: black;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+input[type="checkbox"]:checked ~ .check::before {
+  transform: translateX(-50px);
+}
+/* logo img */
+.logo {
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.logo img {
+  width: 80px;
+  margin-left: 10px;
+}
+
+/* home section */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.me img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #000000;
+}
+.hello {
+  font-size: 30px;
+}
+.container-md {
+  border: 1px solid red;
+}

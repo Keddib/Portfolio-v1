@@ -1,0 +1,117 @@
+/* rational font */
+
+@font-face {
+  font-family: "Rational";
+  font-weight: normal;
+  src: url("./fonts/rational/Rationa-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Rational";
+  font-weight: bold;
+  src: url("./fonts/rational/Rational-SemiBold.otf") format("opentype");
+}
+
+/* gibson font */
+
+@font-face {
+  font-family: "Gibson";
+  font-weight: normal;
+  src: url("./fonts/gibson/GibsonRegular.OTF") format("opentype");
+}
+
+@font-face {
+  font-family: "Gibson";
+  font-weight: 500;
+  src: url("./fonts/gibson/GibsonLight.OTF") format("opentype");
+}
+@font-face {
+  font-family: "Gibson";
+  font-weight: bold;
+  src: url("./fonts/gibson/GibsonSemiBd.OTF") format("opentype");
+}
+@font-face {
+  font-family: "Gibson";
+  font-weight: bolder;
+  src: url("./fonts/gibson/GibsonBold.OTF") format("opentype");
+}
+
+/* containers responsive*/
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+  .hello {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-sm,
+  .container-md {
+    max-width: 720px;
+  }
+  .hello {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    max-width: 960px;
+  }
+  .hello {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    max-width: 1140px;
+  }
+  .hello {
+    font-size: 80px;
+  }
+}
+
+/* contaiers end*/
+
+/* headers */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Rational", sans-serif;
+}
+
+.hello {
+  font-family: "Rational", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin: 0;
+  padding: 0 5%;
+}
