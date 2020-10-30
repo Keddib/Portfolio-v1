@@ -3,39 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles.css" />
     <title>Wolfey</title>
   </head>
+
   <body>
     <div class="container-fluid">
       <div class="container-xl">
-        <div class="navbar">
-          <div class="logo">
-            <label for="change-mode">
-              <input type="checkbox" name="mode" />
-              <span class="check"></span>
-            </label>
+        <nav class="navbar">
+          <a href="#">
             <img src="./images/KEDDIB.png" alt="my user name as logo" />
+          </a>
+          <div>
+            <button id="burger" class="open-main-nav">
+              <span class="burger"></span>
+              <span class="burger-text">Menu</span>
+            </button>
+            <div class="main-nav " id="main-nav">
+              <ul>
+                <li>
+                  <a href="#">Skills</a>
+                </li>
+                <li>
+                  <a href="#">works</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <button class="resume-btn">Resume</button>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="nav-list">
-            <a href="#" class="nav-a">Works</a>
-            <a href="#" class="nav-a">Services</a>
-            <a href="#" class="nav-a">Contact</a>
-            <button class="btn resume">Resume</button>
+              <a href="#" class="nav-a">Works</a>
+              <a href="#" class="nav-a">Services</a>
+              <a href="#" class="nav-a">Contact</a>
+              <button class="btn resume nav-item active">Resume</button>
           </div>
-        </div>
+        </nav>
         <div class="container-md">
-          <div class="home">
-            <div class="me">
-              <img src="./images/one.png" alt="my avatar" />
-              <h4 class="hello">Hi, I'm Khalid</h4>
+          <div class="section home">
+            <img src="./images/one.png" alt="my avatar" />
+            <h4 class="hello">Hi, I'm Khalid</h4>
+            <h1 class="title">Web <span id="line">developer</span> and UX design enthusiast</h1>
+            <p class="sub-title paragraph">
+              a Junior Web developer and software engineering student. I have
+              experience developing and designing software for the web, from
+              simple landing pages to progressive web applications.
+            </p>
+            <button class="contact-me">Connect with me</button>
+          </div>
+          <div class="section skills">
+            <h3 class="section-title"><span id="line">Skills</span></h3>
+            <p class="paragraph">I've been doing web development for about 1 years now, and I'm always eager to learn more in this fast paced industry.</p>
+            <h5 class="technologies">Some technologies I've worked with:</h5>
+              <div class="tec-icons">
+                <img class="icons-img" src="https://img.icons8.com/color/480/000000/javascript.png" alt="js icons"/>
+                <img class="icons-img" src="https://img.icons8.com/color/480/000000/nodejs.png" alt="nodejs icons"/>
+                <img class="icons-img" src="https://img.icons8.com/color/480/000000/vue-js.png" alt="vue.js icons"/>
+                <img class="icons-img" src="https://img.icons8.com/color/480/000000/html-5.png" alt="html icons"/>
+                <img class="icons-img" src="https://img.icons8.com/color/480/000000/css3.png" alt="css3 icons"/>
+                <img class="icons-img" src="https://img.icons8.com/color/480/000000/sass.png" alt="sass icons"/>
+                <img class="icons-img" src="https://img.icons8.com/officel/160/000000/react.png" alt="react icons"/>
+                <img class="icons-img" src="https://img.icons8.com/fluent/240/000000/github.png" alt="github icons"/>
+                <img class="icons-img" src="https://img.icons8.com/fluent/240/000000/adobe-photoshop.png" alt=" photoshop icons"/>
+              </div>
+          </div>
+          <div class="section works">
+            <h3 class="section-title"><span id="line">Works</span></h3>
+            <p class="paragraph">(More comming soon)</p>
+            <div class="swiper">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="./images/peroject-1.png" alt="emage of project">
+                      <p class="paragraph proj-discreption">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                  <div class="swiper-slide">Slide 10</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
-            <h1 class="title">
-              Building digital products, brands, and experience.
-            </h1>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./animation.js"></script>
   </body>
 </html>

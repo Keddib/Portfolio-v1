@@ -2,7 +2,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,7 +15,6 @@ html {
   font-family: "Gibson", sans-serif;
   font-weight: 500;
 }
-
 /* navbar styles */
 .navbar {
   width: 100%;
@@ -25,105 +24,123 @@ html {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 20px;
+  padding: 1em 0.5em;
 }
 
+ .navbar img{
+  width: 90px;
+  margin: 0;
+ }
+
 .nav-list {
-  width: 40%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #fff;
   margin-top: 10px;
+  display: none;
 }
+
 .nav-list a {
   color: #fff;
   text-decoration: none;
 }
 
-.nav-list button {
+.resume-btn {
   width: 110px;
   padding: 15px;
   border-radius: 50px;
-  border: none;
   text-transform: uppercase;
-}
-
-/* logo section */
-
-/* check box for dark mode */
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  visibility: hidden;
-  display: none;
-}
-
-.check {
-  position: relative;
-  display: block;
-  width: 45px;
-  height: 22px;
-  background: #ffffff;
+  border: 0;
+  background: #fff;
+  font-weight: 700;
   cursor: pointer;
-  border-radius: 20px;
-  overflow: hidden;
-  transition: ease-in 0.5s;
 }
-input[type="checkbox"]:checked ~ .check {
-  box-shadow: 0 0 0 1200px #fff;
+
+/* global styiling */
+.section{
+  padding: 1rem;
 }
-.check::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  background: black;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  transition: 0.5s;
+.section-title{
+  margin-top: 0;
 }
-input[type="checkbox"]:checked ~ .check::before {
-  transform: translateX(-50px);
+.paragraph {
+  text-align: center;
+  font-family: "Gibson" sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.1rem, 4vw, 2rem);
+  line-height: 1.2em;
+  color: #9EA3B2;
+  padding: 0 0.5em;
+  margin: 1rem;
 }
-/* logo img */
-.logo {
-  width: 40%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
-}
-.logo img {
-  width: 80px;
-  margin-left: 10px;
+#line{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  line-height:1.5em;
+    border-bottom:solid 5px #3F4451;
 }
 
 /* home section */
+
+
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5%;
 }
 
-.me {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.me img {
-  width: 200px;
-  height: 200px;
+.home img {
+  width: 150px;
+  max-width: 200px;
   border-radius: 50%;
   background: #fff;
   border: 2px solid #000000;
+  margin: 1em;
 }
 .hello {
-  font-size: 30px;
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 500;
+  font-family: "Rational", sans-serif;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
 }
-.container-md {
-  border: 1px solid red;
+
+.title {
+  width: 90%;
+  font-size: clamp(2rem, 5vw, 5rem);
+  letter-spacing: -1px;
+  margin: 1rem;
+  padding: 0 0.5em;
 }
+
+.contact-me {
+  text-transform: uppercase;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+  font-weight: 700;
+  padding: 1.8em 1.8em;
+  border-radius: 30px;
+  border: none;
+  margin: 1rem 0 0.5rem 0;
+}
+
+
+.tec-icons{
+  padding: 0 0.8em;
+}
+.icons-img{
+  border-radius: 50%;
+  width: 90px;
+  background-color: #fff;
+  padding: 0.5em;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: ease-out 1s;
+}
+.icons-img:hover{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
