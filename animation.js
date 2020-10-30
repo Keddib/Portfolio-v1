@@ -6,6 +6,7 @@ var swiper = new Swiper('.swiper-container', {
   });
 
 
+
 let burger = document.getElementById('burger'),
 	 nav    = document.getElementById('main-nav'),
 	 slowmo = document.getElementById('slowmo');
