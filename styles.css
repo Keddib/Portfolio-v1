@@ -126,19 +126,86 @@ html {
 }
 
 .tec-icons {
-  padding: 1em 1.2em;
+  padding: 0em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .icons-img {
   border-radius: 50%;
-  width: 90px;
+  width: 30%;
+  max-width: 200px;
   background-color: #fff;
   padding: 0.5em;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: ease-out 1s;
-  margin: 0.1em;
+  margin: 1%;
 }
 .icons-img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+
+/* .proj-discreption{
+  background: #fff;
+} */
+
+/* contact section */
+
+.contact-form {
+  margin: 10px;
+  padding: 3% 0;
+  border: 1px solid red;
+}
+
+.contact-form form {
+  border: 1px solid red;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  border-top: 1px solid #3f4451;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.social-media {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.social-media svg {
+  width: 30px;
+}
+.email {
+  width: 25%;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.email img {
+  widows: 30px;
+}
+
+.email p {
+  font-size: 10px;
+  font-family: "Gibson", sans-serif;
+  color: #9ea3b2;
+  font-weight: 500;
 }

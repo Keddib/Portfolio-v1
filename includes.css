@@ -1,10 +1,10 @@
 /* rational font */
 
-@font-face {
+/* @font-face {
   font-family: "Rational";
   font-weight: normal;
   src: url("./fonts/rational/Rationa-Light.otf") format("opentype");
-}
+} */
 
 @font-face {
   font-family: "Rational";
@@ -143,6 +143,7 @@ p {
 
 /* Yellow band effect */
 .main-nav::before {
+  width: 100%;
   content: "";
   position: absolute;
   top: 0;
